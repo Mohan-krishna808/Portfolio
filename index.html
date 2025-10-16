@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Portfolio Website HTML CSS JS |</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+
+      <nav class="navbar">
+        <a href="#" onclick="showSection('home')" style="--i: 1" class="active"
+          >Home</a
+        >
+        <a href="#" onclick="showSection('about')" style="--i: 2">About</a>
+        <a href="#" onclick="showSection('skills')" style="--i: 3">Skills</a>
+        <a href="#" onclick="showSection('projects')" style="--i: 4"
+          >Projects</a
+        >
+        <a href="#" onclick="showSection('contact')" style="--i: 5">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Mohan Krishna</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          I’m a passionate full stack developer with experience in creating
+          dynamic and responsive web applications using modern technologies.
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/share/19gNuCwciF/" style="--i: 7"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-twitter"></i></a>
+          <a
+            href="https://www.instagram.com/silent__calm?igsh=cHlqcGdrdnRlazZl"
+            style="--i: 9"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohan-krishna-526ab8326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            style="--i: 10"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Dowloaded CV</a>
+      </div>
+      <div class="home-img">
+        <img src="gemini.png.png" alt="" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="gemini.png.png" alt="Mohan Krishna" />
+        </div>
+
+        <div class="about-content">
+          <h2>About Me</h2>
+          <h3>Full Stack Web Developer 💻</h3>
+          <p>
+            I’m <span class="highlight">Mohan Krishna</span>, a passionate
+            <span class="highlight">Full Stack Developer</span> who loves
+            building interactive, responsive, and efficient web applications. I
+            specialize in both <span class="highlight">frontend</span> and
+            <span class="highlight">backend</span> development, using modern
+            technologies such as <span class="highlight">HTML</span>,
+            <span class="highlight">CSS</span>,
+            <span class="highlight">JavaScript</span>,
+            <span class="highlight">React</span>,
+            <span class="highlight">Node.js</span>,
+            <span class="highlight">Express</span>,
+          </p>
+          <p>
+            I enjoy turning ideas into real-world digital solutions — from
+            crafting seamless user interfaces to designing robust server-side
+            logic. My goal is to create <span class="highlight">scalable</span>,
+            <span class="highlight">user-friendly</span>, and
+            <span class="highlight">visually appealing</span> web experiences
+            that make an impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2>My Skills</h2>
+
+      <div class="skills-container">
+        <!-- Frontend Skills -->
+        <div class="skill-box">
+          <h3>Frontend</h3>
+          <div class="skill-icons">
+            <i class="bx bxl-html5" title="HTML5"></i>
+            <i class="bx bxl-css3" title="CSS3"></i>
+            <i class="bx bxl-javascript" title="JavaScript"></i>
+            <i class="bx bxl-react" title="React"></i>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-box">
+          <h3>Backend</h3>
+          <div class="skill-icons">
+            <i class="bx bxl-java" title="Java"></i>
+            <i class="bx bxs-data" title="JDBC"></i>
+            <i class="bx bx-code-alt" title="J2EE / JSP"></i>
+            <i class="bx bx-layer" title="Spring Framework"></i>
+          </div>
+        </div>
+
+        <!-- Database Skills -->
+        <div class="skill-box">
+          <h3>Database</h3>
+          <div class="skill-icons">
+            <i class="bx bxl-mongodb" title="MongoDB"></i>
+            <i class="bx bxs-data" title="MySQL"></i>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-box">
+          <h3>Tools</h3>
+          <div class="skill-icons">
+            <i class="bx bxl-github" title="GitHub"></i>
+            <i class="bx bxl-java" title="Eclipse IDE"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>🍔 Food Delivery App</h3>
+          <p class="pro">
+            Full-stack application for ordering food online and tracking
+            real-time delivery.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>🩺 Virtual Doctor Model</h3>
+          <p class="pro">
+            AI-powered system to help users get virtual medical consultations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        Feel free to reach out for collaborations, project discussions, or just
+        to say hi! 👋
+      </p>
+
+      <div class="contact-container">
+        <!-- Email -->
+        <div class="contact-box">
+          <i class="bx bx-envelope"></i>
+          <h3>Email</h3>
+          <a href="mailto:mohankrishna3@gmail.com">mohankrishna3@gmail.com</a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-box">
+          <i class="bx bxl-instagram-alt"></i>
+          <h3>Instagram</h3>
+          <a
+            href="https://www.instagram.com/silent__calm?igsh=cHlqcGdrdnRlazZl"
+            target="_blank"
+            >silent_calm</a
+          >
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-box">
+          <i class="bx bxl-linkedin-square"></i>
+          <h3>LinkedIn</h3>
+          <a
+            href="https://www.linkedin.com/in/mohan-krishna-526ab8326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            >Mohan Krishna</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+      <source src="portvideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
